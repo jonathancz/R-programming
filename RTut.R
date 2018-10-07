@@ -127,3 +127,42 @@ rep(x=2, times=5, each=2)
 
 rep(x=c(1,2,3), times=2, each=2)
 
+# ----- RELATIONAL OPERATORS -----
+iAmTrue = TRUE
+iAmFasle = FALSE
+
+sprintf("4 == 5: %s", 4 == 5)
+sprintf("4 != 5: %s", 4 != 5)
+sprintf("4 > 5: %s", 4 > 5)
+sprintf("4 < 5: %s", 4 < 5)
+sprintf("4 >= 5: %s", 4 >= 5)
+sprintf("4 <= 5: %s", 4 <= 5)
+
+# Relational operator vector tricks
+oneTo20 = c(1:20)
+
+# Create vector of Ts and Fs depending on condition
+isEven = oneTo20 %% 2 == 0
+isEven
+
+# Create array of evens
+justEvens = oneTo20[oneTo20 %% 2 == 0]
+justEvens
+
+# ---- LOGICAL OPERATORS ----
+cat("TRUE && FALSE = ", T && F, "\n")
+cat("TRUE || FALSE = ", T || F, "\n")
+cat("!TRUE = ", !T, "\n")
+
+# ---- DECISION MAKING ----
+age = 18
+
+# if, else and else if works like other languages
+if(age >= 18){
+	printf("Drive and Vote")
+} else if (age >= 16) {
+	print("Drive")
+} else {
+	print("Wait")
+}
+
