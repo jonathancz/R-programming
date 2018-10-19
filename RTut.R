@@ -166,3 +166,40 @@ if(age >= 18){
 	print("Wait")
 }
 
+# ----- SWITCH -----
+# Used when you have a limited set of possible values
+grade = "Z"
+
+switch(grade,
+	"A" = print("Great"),
+	"B" = print("Good"),
+	"C" = print("Ok"),
+	"D" = print("Bad"),
+	"F" = print("Terrible"),
+	print("No such Grade"))
+
+# ----- STRINGS -----
+str1 = "This is a string"
+
+# You can compare strings where later letters are considered
+# greater than
+sprintf("Dog > Egg : %s", "Dog" > "Egg")
+sprintf("Dog == Egg : %s", "Dog" == "Egg")
+
+# Combine strings and define separator if any
+str2 = paste("Owl", "Bear", sep = " ")
+
+# Remove bear from the string
+substr(x=str2, start=4, stop=7)
+ 
+# Substitute one string with another
+sub(pattern="Owl", replacement="Hawk", x=str2)
+ 
+# Substitute all matches
+gsub(pattern="Egg", replacement="Chicken", x="Egg Egg")
+ 
+# Split string into vector
+strVect = strsplit("A dog ran fast", " ")
+ 
+strVect
+
